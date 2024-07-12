@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Login Page</title>
+<style>
+    body {
+        background-image: url('https://i.pinimg.com/736x/97/ce/9f/97ce9f2b8f355fd7001d568bcc10a92f.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    label {
+        display: inline-block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="email"],
+    input[type="text"],
+    input[type="password"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    input[type="reset"] {
+        background-color: #f44336;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        opacity: 0.8;
+    }
+</style>
+</head>
+<body>
+<h3>Admin Login</h3>
+<form method="post" action="admincheck.jsp">
+<table>
+<tr>
+    <td>
+        <label for="name">Name:</label> 
+    </td>
+    <td>    
+        <input id="name" name="name" type="text"/> 
+    </td>
+</tr>
+<tr>
+    <td>
+        <label for="password">Password:</label> 
+    </td>
+    <td>    
+        <input id="password" name="password" type="password"/>
+    </td>
+</tr>
+<tr>
+    <td>
+        <input type="submit" value="Login" id="submit"/> 
+    </td>
+    <td>    
+        <input type="reset" value="Reset" id="reset"/>
+    </td>
+</tr>
+</table>
+</form>
+</body>
+</html>
